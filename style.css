@@ -43,8 +43,8 @@ h1 {
 }
 
 .game-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
@@ -63,6 +63,7 @@ h1 {
     cursor: pointer;
     opacity: 0; /* start invisible */
     animation: fadeIn 0.5s forwards; /* fade-in animation */
+    text-decoration: none; /* no underline */
 }
 
 .game-item img {
