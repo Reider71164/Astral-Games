@@ -44,10 +44,12 @@ h1 {
 
 .game-grid {
     display: grid;
-    grid-template-columns: repeat(6, 200px);
-    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
     justify-content: center;
-    margin-top: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .game-item {
