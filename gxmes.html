@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Unblocked Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <!-- Add more tabs here as needed -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Total Games: <span id="game-count"></span></h1>
+        <div class="game-grid" id="game-grid">
+            <!-- JavaScript will populate this -->
+        </div>
+    </main>
+    <script>
+        // Array of game titles and image paths (example)
+        const games = [
+            { name: "Asteroids", img: "images/asteroids.png" },
+            { name: "Bubble Shooter", img: "images/bubble_shooter.png" },
+            { name: "Candy Crush", img: "images/candy_crush.png" },
+            { name: "Doodle Jump", img: "images/doodle_jump.png" },
+            { name: "Flappy Bird", img: "images/flappy_bird.png" },
+            { name: "Fruit Ninja", img: "images/fruit_ninja.png" },
+            { name: "Pac-Man", img: "images/pacman.png" },
+            { name: "Plants vs Zombies", img: "images/plants_vs_zombies.png" },
+            { name: "Space Invaders", img: "images/space_invaders.png" },
+            { name: "Super Mario", img: "images/super_mario.png" },
+            { name: "Tetris", img: "images/tetris.png" },
+            { name: "Zuma", img: "images/zuma.png" }
+        ];
+
+        // Sort games alphabetically by name
+        games.sort((a, b) => a.name.localeCompare(b.name));
+
+        // Get the game grid element
+        const gameGrid = document.getElementById('game-grid');
+        const gameCount = document.getElementById('game-count');
+
+        // Update game count
+        gameCount.textContent = games.length;
+
+        // Create game elements and add to the grid
+        games.forEach(game => {
+            const gameItem = document.createElement('div');
+            gameItem.className = 'game-item';
+
+            const gameImage = document.createElement('img');
+            gameImage.src = game.img;
+            gameImage.alt = game.name;
+
+            const gameName = document.createElement('div');
+            gameName.className = 'game-name';
+            gameName.textContent = game.name;
+
+            gameItem.appendChild(gameImage);
+            gameItem.appendChild(gameName);
+            gameGrid.appendChild(gameItem);
+        });
+    </script>
+</body>
+</html>
