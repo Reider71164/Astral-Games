@@ -23,20 +23,10 @@
         </div>
     </main>
     <script>
-        // Array of game titles and image paths (example)
+        // Array of game titles, image paths, and links (example)
         const games = [
-            { name: "Asteroids", img: "images/asteroids.png" },
-            { name: "Bubble Shooter", img: "images/bubble_shooter.png" },
-            { name: "Candy Crush", img: "images/candy_crush.png" },
-            { name: "Doodle Jump", img: "images/doodle_jump.png" },
-            { name: "Flappy Bird", img: "images/flappy_bird.png" },
-            { name: "Fruit Ninja", img: "images/fruit_ninja.png" },
-            { name: "Pac-Man", img: "images/pacman.png" },
-            { name: "Plants vs Zombies", img: "images/plants_vs_zombies.png" },
-            { name: "Space Invaders", img: "images/space_invaders.png" },
-            { name: "Super Mario", img: "images/super_mario.png" },
-            { name: "Tetris", img: "images/tetris.png" },
-            { name: "Zuma", img: "images/zuma.png" }
+            { name: "Slope", img: "storage/images/slope.jpg", link: "storage/gxmes/slope/index.html" },
+            { name: "Bubble Shooter", img: "images/bubble_shooter.png", link: "bubble_shooter.html" },
         ];
 
         // Sort games alphabetically by name
@@ -51,9 +41,10 @@
 
         // Create game elements and add to the grid with delay
         games.forEach((game, index) => {
-            const gameItem = document.createElement('div');
+            const gameItem = document.createElement('a');
             gameItem.className = 'game-item';
             gameItem.style.animationDelay = `${index * 0.2}s`; // stagger animation
+            gameItem.href = game.link;
 
             const gameImage = document.createElement('img');
             gameImage.src = game.img;
