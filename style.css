@@ -45,8 +45,8 @@ h1 {
 .game-grid {
     display: grid;
     grid-template-columns: repeat(6, 200px);
+    grid-gap: 10px;
     justify-content: center;
-    gap: 10px;
     margin-top: 20px;
 }
 
