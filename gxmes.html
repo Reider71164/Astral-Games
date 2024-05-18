@@ -49,10 +49,11 @@
         // Update game count
         gameCount.textContent = games.length;
 
-        // Create game elements and add to the grid
-        games.forEach(game => {
+        // Create game elements and add to the grid with delay
+        games.forEach((game, index) => {
             const gameItem = document.createElement('div');
             gameItem.className = 'game-item';
+            gameItem.style.animationDelay = `${index * 0.2}s`; // stagger animation
 
             const gameImage = document.createElement('img');
             gameImage.src = game.img;
