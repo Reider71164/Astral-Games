@@ -12,18 +12,16 @@
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gxmes.html">Gxmes</a></li>
-                <!-- Add more tabs here as needed -->
+                <li><a href="https://forms.gle/eLRjxLYfDDPKfHTD7">Game Request</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Total Gxmes: <span id="game-count"></span></h1>
         <div class="game-grid" id="game-grid">
-            <!-- JavaScript will populate this -->
         </div>
     </main>
     <script>
-        // Array of game titles, image paths, and links (example)
         const games = [
             { name: "Slope", img: "storage/images/slope.jpg", link: "storage/gxmes/slope/index.html" },
             { name: "Monkey Mart", img: "storage/images/b3668d7deb043d0f43b5813b0365be8f.avif", link: "storage/gxmes/monkey-mart/index.html" },
@@ -41,23 +39,57 @@
             { name: "Bitlife", img: "storage/images/bitlife-ribbons-how-get-all-complete-list-android-ios-cheats-guide-tips-become.jpg", link: "storage/gxmes/bitlife/index.html" },
             { name: "Animal Crossing: Wild World", img: "storage/images/Animal_Crossing_Wild_World_cover.png", link: "storage/gxmes/animalcrossingwildworld/index.html" },
             { name: "Crossy Road", img: "storage/images/76fc1b000203faf71b77a75b10022142.avif", link: "storage/gxmes/crossyroad/index.html" },
+            { name: "1v1.lol", img: "storage/images/FDftiXwH_400x400.jpg", link: "storage/gxmes/1v1lol/index.html" },
+            { name: "Bloons TD 5", img: "storage/images/bloons-td-5-1494021512734.jpg", link: "storage/gxmes/bloonstd5/index.html" },
+            { name: "Five Nights At Freddys", img: "storage/images/icon0.avif", link: "storage/gxmes/fnaf/fnaf1/index.html" },
+            { name: "Five Nights At Freddys 4", img: "storage/images/11307lJXV6jMrabrKwzNFK94riCQC90Ogs2z0X1LWyX9oDA0W1zmbIw3V-eLTiw-q-kW_7MfwoEOQH-ZEVPPuRX1gDM0TYhw.webp", link: "storage/gxmes/fnaf/fnaf4/index.html" },
+            { name: "Duck Life 1", img: "storage/images/d0048d89-e4fa-4adb-9c77-adc51e4e1c6b.png", link: "storage/gxmes/ducklife/ducklife1/index.html" },
+            { name: "Duck Life 2", img: "storage/images/f2431276-8a98-4214-9a88-d0ea91fe0af2.avif", link: "storage/gxmes/ducklife/ducklife2/index.html" },
+            { name: "Duck Life 3", img: "storage/images/f5671816-e95b-4d41-adb7-411708f431ba.avif", link: "storage/gxmes/ducklife/ducklife3/index.html" },
+            { name: "Duck Life 4", img: "storage/images/e0453c83-9012-44a3-8d4d-595ea0400f58.avif", link: "storage/gxmes/ducklife/ducklife4/index.html" },
+            { name: "Cut The Rope", img: "storage/images/Cut_the_Rope_(App_icon).png", link: "storage/gxmes/cuttherope/index.html" },
+            { name: "Google Dino", img: "storage/images/hes-just-so-pixelated-i-love-him-v0-obzrwinx6wfc1.webp", link: "storage/gxmes/googledino/index.html" },
+            { name: "Happy Wheels", img: "storage/images/happy-wheels.webp", link: "storage/gxmes/happywheels/index.html" },
+            { name: "World's Hardest Game", img: "storage/images/2553369_seasonalcat_the-world-s-hardest-game.png", link: "storage/gxmes/hardestgame/index.html" },
+            { name: "Impossible Quiz", img: "storage/images/3cd96c99-46c1-4ff0-b04a-82381ea07349.png", link: "storage/gxmes/impossiblequiz/index.html" },
+            { name: "Jetpack Joyride", img: "storage/images/d5d34cb9ce7b617b93338982aa0958ab.avif", link: "storage/gxmes/jetpackjoyride/index.html" },
+            { name: "Learn To Fly 1", img: "storage/images/Learn-To-Fly.webp", link: "storage/gxmes/learntofly/learntofly1/index.html" },
+            { name: "Learn To Fly 2", img: "storage/images/e6e38208184bb34132f35691c340fb63e6360bf612cd7dbaaa5a20bfacab2c27.jfif", link: "storage/gxmes/learntofly/learntofly2/index.html" },
+            { name: "Learn To Fly 3", img: "storage/images/learn-to-fly-3.webp", link: "storage/gxmes/learntofly/learntofly3/index.html" },
+            { name: "Minecraft Classic", img: "storage/images/12a0ed7c6bc09b73d6558c6f69ed7f5f.avif", link: "storage/gxmes/minecraft/index.html" },
+            { name: "Moto X3M", img: "storage/images/2c6d5a46cdbceada277c870ce1c389ee.avif", link: "storage/gxmes/motox3m/index.html" },
+            { name: "Moto X3M 2", img: "storage/images/Moto-X3M-2.webp", link: "storage/gxmes/motox3m2/index.html" },
+            { name: "Papa's Pizzeria", img: "storage/images/377fd7d97c2b2f4fe25618ccffcc601b.avif", link: "storage/gxmes/papaspizzeria/index.html" },
+            { name: "Papa's Burgeria", img: "storage/images/4fad37685af404ca0f987d927358ab79.avif", link: "storage/gxmes/papasburgeria/index.html" },
+            { name: "Papa's Freezeria", img: "storage/images/fe7c19da32800855dfb8f039adfe353b.jfif", link: "storage/gxmes/papasfreezeria/index.html" },
+            { name: "Papa's Pancakeria", img: "storage/images/29ee26d83d0e533f31629e8195e9b1db.avif", link: "storage/gxmes/papaspancakeria/index.html" },
+            { name: "Papa's Pasteria", img: "storage/images/b412fa2255f0dd1098b6759f71824cd7.avif", link: "storage/gxmes/papaspasteria/index.html" },
+            { name: "Papa's Sushiria", img: "storage/images/cfd5ae6652950cfeb5b4cc0ffe41ed81.avif", link: "storage/gxmes/papassushiria/index.html" },
+            { name: "Red Ball 4", img: "storage/images/9b739087f9938fb143a2519252addbb8.avif", link: "storage/gxmes/redball4/index.html" },
+            { name: "Aquapark Slides", img: "storage/images/unnamed.png", link: "storage/gxmes/aquapark-slides/index.html" },
+            { name: "A Dance of Fire and Ice", img: "storage/images/images.jfif", link: "storage/gxmes/a-dance-of-fire-and-ice" },
+            { name: "Baldi's Basics", img: "storage/images/baldis-basics-in-education-and-learning.webp", link: "storage/gxmes/baldis-basics/index.html" },
+            { name: "Basket Random", img: "storage/images/basket-random.jpeg", link: "storage/gxmes/basket-random/index.html" },
+            { name: "Bob the Robber 2", img: "storage/images/9468_5eb3ef7732ef0.jpg", link: "storage/gxmes/bobtherobber2/index.html" },
+            { name: "Boxing Random", img: "storage/images/unnamed1.png", link: "storage/gxmes/boxing-random/index.html" },
+            { name: "Cookie Clicker", img: "storage/images/unnamed.webp", link: "storage/gxmes/cookie-clicker/index.html" },
+            { name: "Doge Miner", img: "storage/images/dogeminer.avif", link: "storage/gxmes/dogeminer/index.html" },
+            { name: "A Small World Cup", img: "storage/images/b13130b65b9be8f4d1231061c04246a1.avif", link: "storage/gxmes/asmallworldcup/index.html" },
+            { name: "Funny Shooter", img: "storage/images/funny-shooter-2-f200x200.webp", link: "storage/gxmes/funny-shooter/index.html" },
+            { name: "Run 3", img: "storage/images/10934781.png", link: "storage/gxmes/run3/index.html" },
+            // { name: "", img: "storage/images/", link: "storage/gxmes/" },
         ];
-
-        // Sort games alphabetically by name
         games.sort((a, b) => a.name.localeCompare(b.name));
 
-        // Get the game grid element
         const gameGrid = document.getElementById('game-grid');
         const gameCount = document.getElementById('game-count');
 
-        // Update game count
         gameCount.textContent = games.length;
 
-        // Create game elements and add to the grid with delay
         games.forEach((game, index) => {
             const gameItem = document.createElement('a');
             gameItem.className = 'game-item';
-            gameItem.style.animationDelay = `${index * 0.2}s`; // stagger animation
+            gameItem.style.animationDelay = `${index * 0.1}s`; 
             gameItem.href = game.link;
 
             const gameImage = document.createElement('img');
