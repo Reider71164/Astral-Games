@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Reider71164/Astral-Games/issues"
   },
-  "homepage": "https://github.com/Reider71164/Astral-Games#readme"
+  "homepage": "https://github.com/Reider71164/Astral-Games#readme",
+  "dependencies": {
+    "@tomphttp/bare-server-node": "^2.0.3"
+  }
 }
