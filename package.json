@@ -1,0 +1,19 @@
+{
+  "name": "astral",
+  "version": "1.0.0",
+  "description": "sigma site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Reider71164/Astral-Games.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reider71164/Astral-Games/issues"
+  },
+  "homepage": "https://github.com/Reider71164/Astral-Games#readme"
+}
