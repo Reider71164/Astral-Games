@@ -16,6 +16,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "dependencies": {
     "@tomphttp/bare-server-node": "^1.2.2",
     "acorn-hammerhead": "^0.5.0",
@@ -26,3 +27,14 @@
     "webpack": "^5.70.0"
   }
 }
+=======
+  "bugs": {
+    "url": "https://github.com/Reider71164/Astral-Games/issues"
+  },
+  "homepage": "https://github.com/Reider71164/Astral-Games#readme",
+"dependencies": {
+  "@tomphttp/bare-server-node": "^1.2.2",
+  "node-static": "^0.7.11"
+}
+}
+>>>>>>> 9dcbb1fea4e17e0d06d0131917ab8ad4dc4b714c

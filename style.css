@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #000;
+    color: #fff; 
     text-align: center;
 }
 
@@ -39,7 +40,7 @@ main {
 }
 
 h1 {
-    color: #333;
+    color: #fff;
 }
 
 .game-grid {
@@ -63,9 +64,9 @@ h1 {
     overflow: hidden;
     text-align: center;
     cursor: pointer;
-    opacity: 0; /* start invisible */
-    animation: fadeIn 0.5s forwards; /* fade-in animation */
-    text-decoration: none; /* no underline */
+    opacity: 0; 
+    animation: fadeIn 0.5s forwards; 
+    text-decoration: none;
 }
 
 .game-item img {
