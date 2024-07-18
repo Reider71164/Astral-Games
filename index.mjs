@@ -1,9 +1,12 @@
-import { createServer } from '@tomphttp/bare-server-node';
+// index.mjs
+
+import bareServerNode from '@tomphttp/bare-server-node';
 import http from 'http';
 import nodeStatic from 'node-static';
 
 const port = process.env.PORT || 8080;
 
+const createServer = bareServerNode.createServer;
 const bare = createServer('/bare/');
 const serve = new nodeStatic.Server('main/');
 
