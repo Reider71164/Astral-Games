@@ -4,7 +4,6 @@ body {
     padding: 0;
     background: url('path/to/background.png') center center no-repeat;
     background-size: cover;
-    background-attachment: fixed; /* Keep the background fixed while scrolling */
     color: #fff;
     text-align: center;
 }
