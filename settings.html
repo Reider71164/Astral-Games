@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astral Gxmes | Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for settings page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.9);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .settings-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #fff;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 10px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+
+        button {
+            background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 3px;
+            margin-top: 10px;
+            font-weight: bold; /* Bold text */
+        }
+
+            button:hover {
+                background-color: rgba(0, 0, 0, 1); /* Fully opaque black on hover */
+            }
+    </style>
+</head>
+<body>
+    <div class="settings-container">
+        <h2>Settings</h2>
+        <form id="settingsForm">
+            <label for="panicKey">Panic Key:</label>
+            <input type="text" id="panicKey" placeholder="Click to set panic key...">
+            <br>
+            <label for="panicURL">Panic URL:</label>
+            <input type="text" id="panicURL" placeholder="Enter panic URL...">
+            <br>
+            <button type="submit">Save Settings</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('settingsForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const panicKey = document.getElementById('panicKey').value.trim();
+            const panicURL = document.getElementById('panicURL').value.trim();
+
+            localStorage.setItem('panicKey', panicKey);
+            localStorage.setItem('panicURL', panicURL);
+
+            alert('Settings saved successfully!');
+            window.location.href = 'index.html';
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const panicKeyInput = document.getElementById('panicKey');
+
+            panicKeyInput.addEventListener('keydown', function (event) {
+                // Prevent default behavior to stop typing after the first key press
+                event.preventDefault();
+
+                // Set the input value to the pressed key (only if it's a single character)
+                if (event.key.length === 1) {
+                    panicKeyInput.value = event.key.toUpperCase();
+                }
+            });
+        });
+
+        // Retrieve and populate saved settings on page load
+        const savedPanicKey = localStorage.getItem('panicKey');
+        const savedPanicURL = localStorage.getItem('panicURL');
+
+        if (savedPanicKey) {
+            document.getElementById('panicKey').value = savedPanicKey;
+        }
+
+        if (savedPanicURL) {
+            document.getElementById('panicURL').value = savedPanicURL;
+        }
+    </script>
+</body>
+</html>

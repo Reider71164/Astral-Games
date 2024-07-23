@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astral Gxmes | Gxmes</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #searchInput {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: none; 
+            border-radius: 5px;
+            background-color: black;
+            color: white; 
+            font-weight: bold; 
+            outline: none; 
+        }
+        ::placeholder {
+            color: white; 
+            font-weight: bold; 
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,8 +35,8 @@
         </nav>
     </header>
     <main>
-        <h1 id="game-count">Search <span id="total-games"></span> Gxmes</h1>
-        <input type="text" id="searchInput" placeholder="Search games...">
+        <h1>Gxmes</h1>
+        <input type="text" id="searchInput" placeholder="Search Gxmes...">
         <div class="game-grid" id="game-grid">
         </div>
     </main>
@@ -96,6 +113,7 @@
             { name: "Yohoho.io", img: "storage/images/yohoho-io.webp", link: "storage/gxmes/yohoho/index.html" },
             { name: "JustFall.LOL", img: "storage/gxmes/just-fall/just-fall/unnamed.png", link: "storage/gxmes/just-fall/just-fall/index.html" },
             { name: "Moto X3M", img: "storage/images/2c6d5a46cdbceada277c870ce1c389ee.avif", link: "storage/gxmes/motox3m/index.html" },
+            { name: "Drive Mad", img: "storage/gxmes/drive-mad/logo.jpg", link: "storage/gxmes/drive-mad/index.html" },
             // { name: "", img: "storage/images/", link: "storage/gxmes/" },
         ];
         games.sort((a, b) => a.name.localeCompare(b.name));
@@ -127,7 +145,7 @@
                 gameGrid.appendChild(gameItem);
             });
 
-            totalGames.textContent = gameList.length;
+            searchInput.placeholder = `Search ${gameList.length} Gxmes...`;
         }
 
         // Initial display
