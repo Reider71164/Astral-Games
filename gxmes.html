@@ -18,7 +18,8 @@
         </nav>
     </header>
     <main>
-        <h1>Total Gxmes: <span id="game-count"></span></h1>
+        <h1 id="game-count">Search <span id="total-games"></span> Gxmes</h1>
+        <input type="text" id="searchInput" placeholder="Search games...">
         <div class="game-grid" id="game-grid">
         </div>
     </main>
@@ -101,26 +102,44 @@
 
         const gameGrid = document.getElementById('game-grid');
         const gameCount = document.getElementById('game-count');
+        const totalGames = document.getElementById('total-games');
+        const searchInput = document.getElementById('searchInput');
 
-        gameCount.textContent = games.length;
+        // Function to display games
+        function displayGames(gameList) {
+            gameGrid.innerHTML = '';
+            gameList.forEach((game, index) => {
+                const gameItem = document.createElement('a');
+                gameItem.className = 'game-item';
+                gameItem.style.animationDelay = `${index * 0.05}s`; 
+                gameItem.href = game.link;
 
-        games.forEach((game, index) => {
-            const gameItem = document.createElement('a');
-            gameItem.className = 'game-item';
-            gameItem.style.animationDelay = `${index * 0.05}s`; 
-            gameItem.href = game.link;
+                const gameImage = document.createElement('img');
+                gameImage.src = game.img;
+                gameImage.alt = game.name;
 
-            const gameImage = document.createElement('img');
-            gameImage.src = game.img;
-            gameImage.alt = game.name;
+                const gameName = document.createElement('div');
+                gameName.className = 'game-name';
+                gameName.textContent = game.name;
 
-            const gameName = document.createElement('div');
-            gameName.className = 'game-name';
-            gameName.textContent = game.name;
+                gameItem.appendChild(gameImage);
+                gameItem.appendChild(gameName);
+                gameGrid.appendChild(gameItem);
+            });
 
-            gameItem.appendChild(gameImage);
-            gameItem.appendChild(gameName);
-            gameGrid.appendChild(gameItem);
+            totalGames.textContent = gameList.length;
+        }
+
+        // Initial display
+        displayGames(games);
+
+        // Search functionality
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            const filteredGames = games.filter(game =>
+                game.name.toLowerCase().includes(searchTerm)
+            );
+            displayGames(filteredGames);
         });
     </script>
 </body>
