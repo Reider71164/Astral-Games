@@ -29,7 +29,6 @@
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gxmes.html">Gxmes</a></li>
-                <li><a href="https://forms.gle/eLRjxLYfDDPKfHTD7">Game Request</a></li>
                 <li><a href="https://discord.gg/v54gnj4MGn">Discord</a></li>
             </ul>
         </nav>
@@ -42,6 +41,7 @@
     </main>
     <script>
         const games = [
+            { name: "! Game Request", img: "storage/images/forms_512dp.png", link: "https://forms.gle/eLRjxLYfDDPKfHTD7" },
             { name: "Slope", img: "storage/images/slope.jpg", link: "storage/gxmes/slope/index.html" },
             { name: "Monkey Mart", img: "storage/images/b3668d7deb043d0f43b5813b0365be8f.avif", link: "storage/gxmes/monkey-mart/index.html" },
             { name: "Subway Surfers Bali", img: "storage/images/BaliIcon.webp", link: "storage/gxmes/subway-surfers/index.html" },
@@ -114,6 +114,17 @@
             { name: "JustFall.LOL", img: "storage/gxmes/just-fall/just-fall/unnamed.png", link: "storage/gxmes/just-fall/just-fall/index.html" },
             { name: "Moto X3M", img: "storage/images/2c6d5a46cdbceada277c870ce1c389ee.avif", link: "storage/gxmes/motox3m/index.html" },
             { name: "Drive Mad", img: "storage/gxmes/drive-mad/logo.jpg", link: "storage/gxmes/drive-mad/index.html" },
+            { name: "99 Balls 3D", img: "storage/images/99balls.png", link: "storage/gxmes/99balls/index.html" },
+            { name: "Doge Miner 2", img: "storage/gxmes/dogeminer2/thumb.jpg", link: "storage/gxmes/dogeminer2/index.html" },
+            { name: "Bloons TD 1", img: "storage/gxmes/bloonstd/bloonstd.jpg", link: "storage/gxmes/bloonstd/index.html" },
+            { name: "Bloons TD 2", img: "storage/gxmes/bloonstd2/bloonstd2.png", link: "storage/gxmes/bloonstd2/index.html" },
+            { name: "Bloons TD 4", img: "storage/images/13426_5ec634fec15e3.jpg", link: "storage/gxmes/btd4/index.html" },
+            { name: "Chess", img: "storage/images/2-player-chess.jpg", link: "storage/gxmes/chess/chess.html" },
+            { name: "Drift Boss", img: "storage/images/drift-boss1.png", link: "storage/gxmes/drift-boss/index.html" },
+            { name: "Drift Hunters", img: "storage/gxmes/drift-hunters/drift-hunters.png", link: "storage/gxmes/drift-hunters/index.html" },
+            { name: "Eel Slap", img: "storage/gxmes/eel-slap/eel-slap.png", link: "storage/gxmes/eel-slap/index.html" },
+            { name: "Getaway Shootout", img: "storage/images/getaway-shootout.png", link: "storage/gxmes/getaway-shootout/index.html" },
+            { name: "Gimme the Airpod", img: "storage/images/YSJHRP.png", link: "storage/gxmes/gimme-the-airpod/index.html" },
             // { name: "", img: "storage/images/", link: "storage/gxmes/" },
         ];
         games.sort((a, b) => a.name.localeCompare(b.name));
@@ -129,7 +140,7 @@
             gameList.forEach((game, index) => {
                 const gameItem = document.createElement('a');
                 gameItem.className = 'game-item';
-                gameItem.style.animationDelay = `${index * 0.05}s`; 
+                gameItem.style.animationDelay = `${index * 0.03}s`; 
                 gameItem.href = game.link;
 
                 const gameImage = document.createElement('img');
@@ -144,7 +155,6 @@
                 gameItem.appendChild(gameName);
                 gameGrid.appendChild(gameItem);
             });
-
             searchInput.placeholder = `Search ${gameList.length} Gxmes...`;
         }
 
