@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/logos-from-memory",{data:[{}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/lets-settle-this",{data:[{}],fetch:{},mutations:[]});

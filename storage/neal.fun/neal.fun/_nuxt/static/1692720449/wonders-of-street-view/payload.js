@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/wonders-of-street-view",{data:[{}],fetch:{},mutations:[]});

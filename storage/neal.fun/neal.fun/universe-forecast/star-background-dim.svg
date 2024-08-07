@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 298 298" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Layer_1-2">
+        <rect x="0" y="0" width="298" height="298"/>
+        <circle cx="39" cy="49" r="6" style="fill:white;fill-opacity:0.9;"/>
+        <path d="M157.73,87.44L154.66,84.56L150.54,85.45L152.33,81.64L150.21,78.01L154.38,78.53L157.19,75.39L157.98,79.52L161.84,81.22L158.15,83.25L157.73,87.44Z" style="fill:rgb(255,178,136);fill-opacity:0.9;fill-rule:nonzero;"/>
+        <path d="M55.49,190.17L50.1,190.48L47.3,195.1L45.34,190.07L40.08,188.84L44.26,185.42L43.8,180.04L48.35,182.95L53.33,180.86L51.96,186.08L55.49,190.17Z" style="fill:white;fill-opacity:0.9;fill-rule:nonzero;"/>
+        <path d="M253.12,243L250.25,238.12L244.61,237.72L248.36,233.48L247,227.99L252.19,230.25L256.99,227.26L256.45,232.89L260.77,236.54L255.25,237.76L253.12,243Z" style="fill:white;fill-opacity:0.9;fill-rule:nonzero;"/>
+        <path d="M150.39,155.92L145.72,157.55L144.41,162.31L141.42,158.37L136.48,158.6L139.3,154.54L137.56,149.91L142.3,151.34L146.16,148.26L146.26,153.2L150.39,155.92Z" style="fill:rgb(169,220,255);fill-opacity:0.9;fill-rule:nonzero;"/>
+        <path d="M244.31,35.09L242.49,31.11L238.17,30.36L241.39,27.39L240.77,23.06L244.59,25.2L248.53,23.27L247.66,27.57L250.72,30.71L246.36,31.22L244.31,35.09Z" style="fill:white;fill-opacity:0.9;fill-rule:nonzero;"/>
+        <path d="M218.88,130.49L214.8,130.29L212.32,133.54L211.25,129.6L207.39,128.25L210.81,126.01L210.91,121.92L214.09,124.48L218,123.31L216.55,127.13L218.88,130.49Z" style="fill:white;fill-opacity:0.9;fill-rule:nonzero;"/>
+        <circle cx="86.5" cy="110.5" r="4.5" style="fill:white;fill-opacity:0.9;"/>
+        <circle cx="156" cy="233" r="6" style="fill:rgb(255,177,171);fill-opacity:0.9;"/>
+        <circle cx="22.5" cy="287.5" r="4.5" style="fill:white;fill-opacity:0.9;"/>
+        <circle cx="289" cy="163" r="6" style="fill:rgb(255,178,136);fill-opacity:0.9;"/>
+    </g>
+</svg>

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ambient-chaos",{data:[{}],fetch:{},mutations:[]});

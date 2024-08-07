@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/absurd-trolley-problems",{data:[{}],fetch:{},mutations:[]});
