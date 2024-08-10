@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public"
+    "\\public",
+    "\\public\\uv"
   ],
-  "SelectedNode": "\\public\\gxmes.html",
+  "SelectedNode": "\\index.js",
   "PreviewInSolutionExplorer": false
 }
