@@ -11,7 +11,7 @@
     <header>
         <nav>
             <ul class="nav-list">
-                <li><a href="/">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="gxmes.html">Gxmes</a></li>
                 <li><a href="search.html">Search</a></li>
             </ul>
@@ -30,13 +30,13 @@
             </button>
         </div>
     </main>
+    <script>
+        fetch('./storage/splash.json')
+            .then((res) => res.json())
+            .then((data) => {
+                document.querySelector('#splash').innerHTML =
+                    data[Math.floor(Math.random() * data.length)]
+            })
+    </script>
 </body>
-<script>
-    fetch('./storage/splash.json')
-        .then((res) => res.json())
-        .then((data) => {
-            document.querySelector('#splash').innerHTML =
-                data[Math.floor(Math.random() * data.length)]
-        })
-</script>
 </html>
