@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 73 341" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1199.56,-1865.25)">
+        <g transform="matrix(1.21355,0,0,1.61105,-1.37965e-13,-1105.86)">
+            <g transform="matrix(-0.824028,-9.05026e-17,4.53437e-17,-0.22371,1269.47,2460.53)">
+                <rect x="268" y="1809" width="73" height="946" style="fill:rgb(255,194,28);fill-opacity:0;"/>
+                <clipPath id="_clip1">
+                    <rect x="268" y="1809" width="73" height="946"/>
+                </clipPath>
+                <g clip-path="url(#_clip1)">
+                    <g transform="matrix(3.10174e-17,-2.77464,1,1.0514e-16,-1846.91,5626.14)">
+                        <rect x="1022.02" y="2101.34" width="370.442" height="100.131"/>
+                    </g>
+                    <g transform="matrix(0.5,-2.40291,0.866025,1.38732,-608.078,2214.15)">
+                        <rect x="222.332" y="856.399" width="47.027" height="109.365" style="fill:rgb(255,194,28);"/>
+                    </g>
+                    <g transform="matrix(0.5,-2.40291,0.866025,1.38732,-608.078,1898.81)">
+                        <rect x="222.332" y="856.399" width="47.027" height="109.365" style="fill:rgb(255,194,28);"/>
+                    </g>
+                    <g transform="matrix(0.5,-2.40291,0.866025,1.38732,-608.078,1583.48)">
+                        <rect x="222.332" y="856.399" width="47.027" height="109.365" style="fill:rgb(255,194,28);"/>
+                    </g>
+                    <g transform="matrix(0.5,-2.40291,0.866025,1.38732,-608.078,1268.15)">
+                        <rect x="222.332" y="856.399" width="47.027" height="109.365" style="fill:rgb(255,194,28);"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

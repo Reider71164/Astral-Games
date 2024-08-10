@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/baby-map",{data:[{}],fetch:{},mutations:[]});

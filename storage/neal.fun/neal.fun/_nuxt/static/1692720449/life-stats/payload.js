@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/life-stats",{data:[{}],fetch:{},mutations:[]});

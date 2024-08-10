@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/speed",{data:[{}],fetch:{},mutations:[]});

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 65 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-10963.1,-2861.75)">
+        <g transform="matrix(1,0,0,1.61759,7890.98,-1342.68)">
+            <g transform="matrix(1,0,0,0.618202,379.328,852.3)">
+                <g transform="matrix(1,0,0,1,11,-50)">
+                    <path d="M2703,2939C2710.5,2938.55 2676.76,3004.74 2703,3007C2744.1,3010.54 2729.42,3011.86 2725,2939" style="fill:rgb(255,149,35);"/>
+                    <clipPath id="_clip1">
+                        <path d="M2703,2939C2710.5,2938.55 2676.76,3004.74 2703,3007C2744.1,3010.54 2729.42,3011.86 2725,2939"/>
+                    </clipPath>
+                    <g clip-path="url(#_clip1)">
+                        <path d="M2703.1,2945C2703.1,2945 2696.86,3008.28 2709,3008.28L2689,3008.28L2689,2946L2703.1,2945Z" style="fill:rgb(228,114,0);"/>
+                    </g>
+                    <path d="M2703,2939C2710.5,2938.55 2676.76,3004.74 2703,3007C2744.1,3010.54 2729.42,3011.86 2725,2939" style="fill:none;stroke:black;stroke-width:2.5px;"/>
+                </g>
+                <g transform="matrix(0.939394,0,0,0.939394,175.485,126.242)">
+                    <circle cx="2714" cy="2908" r="33" style="fill:white;"/>
+                    <clipPath id="_clip2">
+                        <circle cx="2714" cy="2908" r="33"/>
+                    </clipPath>
+                    <g clip-path="url(#_clip2)">
+                        <g transform="matrix(0.94542,-0.48926,0.48926,0.94542,-1275.54,1486.46)">
+                            <path d="M2719.74,2875.05C2709.45,2868.38 2667.77,2930.89 2715,2939L2677,2939L2677,2885L2719.74,2875.05Z" style="fill-opacity:0.09;"/>
+                        </g>
+                    </g>
+                    <circle cx="2714" cy="2908" r="33" style="fill:none;stroke:black;stroke-width:2.66px;"/>
+                </g>
+                <g transform="matrix(1,0,0,1.06978,19.099,-270.596)">
+                    <path d="M2695,2954.23C2692.35,2953.99 2674.46,2971.26 2675.9,2996.5" style="fill:none;stroke:black;stroke-width:2.41px;"/>
+                </g>
+                <g transform="matrix(-1,0,0,1.06978,5431.82,-272.367)">
+                    <path d="M2695,2954.23C2692.35,2953.99 2674.46,2971.26 2675.9,2996.5" style="fill:none;stroke:black;stroke-width:2.41px;"/>
+                </g>
+                <g transform="matrix(3,0,0,1.2,-5390.38,-629.6)">
+                    <ellipse cx="2705" cy="2903" rx="1" ry="5"/>
+                </g>
+                <g transform="matrix(3,0,0,1.2,-5373.38,-629.6)">
+                    <ellipse cx="2705" cy="2903" rx="1" ry="5"/>
+                </g>
+                <g transform="matrix(1,0,0,1,11,-50)">
+                    <path d="M2701,3007L2701,3046" style="fill:none;stroke:black;stroke-width:2.5px;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,11,-50)">
+                    <path d="M2723,3008.28L2723,3046" style="fill:none;stroke:black;stroke-width:2.5px;"/>
+                </g>
+                <g transform="matrix(0.333333,0,0,0.333333,1820.33,1918)">
+                    <circle cx="2714" cy="2952" r="3" style="stroke:black;stroke-width:9px;"/>
+                </g>
+                <g transform="matrix(0.333333,0,0,0.333333,1820.33,1937.9)">
+                    <circle cx="2714" cy="2952" r="3" style="stroke:black;stroke-width:9px;"/>
+                </g>
+                <g transform="matrix(0.333333,0,0,0.333333,1820.33,1957.92)">
+                    <circle cx="2714" cy="2952" r="3" style="stroke:black;stroke-width:9px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

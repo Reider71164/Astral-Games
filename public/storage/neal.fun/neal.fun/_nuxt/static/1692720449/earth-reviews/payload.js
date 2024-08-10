@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/earth-reviews",{data:[{}],fetch:{},mutations:[]});

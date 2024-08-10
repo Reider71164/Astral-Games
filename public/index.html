@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astral Gxmes | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="gxmes.html">Gxmes</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="center-container">
+            <h1>Welcome To <span>Astral Gxmes</span></h1>
+            <p id="splash"></p>
+            <br />
+            <button onclick="window.location.href='https://discord.gg/v54gnj4MGn'" class="button play">
+                Join our Discord
+            </button>
+            <button onclick="launchab()" id="launchab" class="button play">
+                Launch in about:blank
+            </button>
+        </div>
+    </main>
+</body>
+<script>
+    fetch('./storage/splash.json')
+        .then((res) => res.json())
+        .then((data) => {
+            document.querySelector('#splash').innerHTML =
+                data[Math.floor(Math.random() * data.length)]
+        })
+</script>
+</html>

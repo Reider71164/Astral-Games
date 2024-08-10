@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/deep-sea",{data:[{}],fetch:{},mutations:[]});

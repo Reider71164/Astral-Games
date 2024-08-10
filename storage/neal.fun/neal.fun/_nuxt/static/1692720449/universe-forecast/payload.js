@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/universe-forecast",{data:[{}],fetch:{},mutations:[]});

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+        <title>Elastic Face - UBG365</title>
+        <link rel="stylesheet" href="face.css">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NM2Y6MDTZN"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-NM2Y6MDTZN');
+        </script>
+    </head>
+    <body>
+        <script type="text/template" id="loading-template">
+            <div id="loading-bar" class="loading-bar-visible">
+                <div id="loading-fill"></div>
+            </div>
+        </script>
+        <script type="text/template" id="no-support-template">
+            <div id="error">Your browser does not support the required features. Try another browser and/or device!</div>
+        </script>
+        <script type="text/template" id="main-template">
+            <div id="quality-container">
+                <div id="quality-label">Quality</div>
+                <div class="quality" id="quality-medium">Medium</div>
+                <div class="quality" id="quality-high">High</div>
+            </div>
+        </script>
+        <div id="placeholder"></div>
+        <script src="face.js"></script>
+    </body>
+</html>

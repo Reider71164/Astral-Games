@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/auction-game",{data:[{}],fetch:{},mutations:[]});

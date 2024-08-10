@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ten-years-ago",{data:[{}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/who-was-alive",{data:[{}],fetch:{},mutations:[]});

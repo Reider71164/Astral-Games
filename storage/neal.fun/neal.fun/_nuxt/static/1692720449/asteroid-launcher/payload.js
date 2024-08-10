@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/asteroid-launcher",{data:[{}],fetch:{},mutations:[]});

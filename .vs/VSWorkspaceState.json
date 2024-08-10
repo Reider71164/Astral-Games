@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\storage"
+    "\\public",
+    "\\public\\storage",
+    "\\public\\uv"
   ],
-  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }

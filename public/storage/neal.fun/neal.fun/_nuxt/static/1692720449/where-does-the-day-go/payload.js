@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/where-does-the-day-go",{data:[{}],fetch:{},mutations:[]});

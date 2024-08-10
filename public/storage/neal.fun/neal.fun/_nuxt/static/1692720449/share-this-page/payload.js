@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/share-this-page",{data:[{}],fetch:{},mutations:[]});
