@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astral Gxmes | Search</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="./preload.js"></script>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", async () => {
+                await navigator.serviceWorker.register("/uv/sw.js");
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -24,11 +36,9 @@
         <input class="pxyinput" type="text" placeholder="Search..." />
     </div>
 
-    <iframe class="frame" style="display: none;"></iframe>
+    <iframe id="iframeWindow" class="iframeWindow"></iframe>
 
     <!-- JavaScript files should be placed at the end of the body for better performance -->
-    <script src="./preload.js"></script>
-    <script src="./uv/uv.config.js"></script>
     <script src="./search.js"></script>
 </body>
 </html>
