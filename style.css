@@ -28,6 +28,16 @@ body {
     background-color: #141414;
 }
 
+.frame {
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    border: none;
+    height: calc(100vh - 80px);
+    width: calc(100vw - 30px);
+}
+
 header {
     background-color: #333;
     padding: 10px 0;
