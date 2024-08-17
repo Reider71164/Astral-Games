@@ -3693,13 +3693,13 @@ var UnityLoader = UnityLoader || {
 		if (!String.fromCharCode.apply(null, r.subarray(o, o + i.length)) == i)
 			throw 'unknown data format';
 		o += i.length;
-		var a = n.getUint32(o, true);
+		var a = n.getUint32(o, !0);
 		for (o += 4; o < a; ) {
-			var s = n.getUint32(o, true);
+			var s = n.getUint32(o, !0);
 			o += 4;
-			var d = n.getUint32(o, true);
+			var d = n.getUint32(o, !0);
 			o += 4;
-			var l = n.getUint32(o, true);
+			var l = n.getUint32(o, !0);
 			o += 4;
 			var u = String.fromCharCode.apply(null, r.subarray(o, o + l));
 			o += l;
