@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/embed.css">
-		<meta name="csrf-token" content="rRt7iDPW1usInp8RS5n2SeShtZJpc5JpHtdnt0bq" />
-		<title>Learn to Fly 3</title>
-		<script language="javascript">
-			var GAME = {
-					name: "Learn to Fly 3",
-					slug: 'learn-to-fly-3',
-					src: '',
-					width: 1000,
-					height: 800,
-					extension: 'SWF',
-					paramOptionsCode: '',
-					embedOptionsCode: '',
-					playable: 1,
-					resizable: 1,
-					updatedAt: '2023-8-31 17:20:00',
-					avm: '2',
-					reqEmulator: null,
-					fileType: 2
-				};
-				/* MORE Settings */
-				try{
-						GAME.src = 'https://unbl0ck.github.io/games/learntofly/learntofly3/learntofly3.swf';
-						GAME.fileType = 1;
-				}catch(e){
-					console.warn(e);
-				};
-				try{
-					var params = JSON.parse('{"wmode":"opaque", "allowNetworking": "internal", "allowScriptAccess": "No"}');
-						for(var i in params){
-							GAME.paramOptionsCode += '<param name="'+i+'" value="'+ params[i] +'"/>';
-							GAME.embedOptionsCode += ' '+i+'="'+params[i]+'"';
-						}
-						console.log(GAME.embedOptionsCode, GAME.paramOptionsCode);
-				}catch(e){
-					console.warn('Params: ', e);
-				};
-			var request = new URLSearchParams(window.location.search);
-				GAME.reqEmulator = request.get('emulator');
-				if (!GAME.reqEmulator) {
-					GAME.reqEmulator = null;
-				};
-			var langs = {
-				play_now: "PLAY NOW",
-				new_window: "New Window",
-				loading: "Loading...",
-			};
-		</script>
-		<script src="js/flash_detect.js"></script>
-		<script src="js/jquery.min.js"></script>
+<head>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3044824252307692"
+			crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/embed.css">
+	<meta name="csrf-token" content="rRt7iDPW1usInp8RS5n2SeShtZJpc5JpHtdnt0bq" />
+	<title>Learn to Fly 3</title>
+	<script language="javascript">
+		var GAME = {
+			name: "Learn to Fly 3",
+			slug: 'learn-to-fly-3',
+			src: '',
+			width: 1000,
+			height: 800,
+			extension: 'SWF',
+			paramOptionsCode: '',
+			embedOptionsCode: '',
+			playable: 1,
+			resizable: 1,
+			updatedAt: '2023-8-31 17:20:00',
+			avm: '2',
+			reqEmulator: null,
+			fileType: 2
+		};
+		/* MORE Settings */
+		try {
+			GAME.src = 'https://unbl0ck.github.io/games/learntofly/learntofly3/learntofly3.swf';
+			GAME.fileType = 1;
+		} catch (e) {
+			console.warn(e);
+		};
+		try {
+			var params = JSON.parse('{"wmode":"opaque", "allowNetworking": "internal", "allowScriptAccess": "No"}');
+			for (var i in params) {
+				GAME.paramOptionsCode += '<param name="' + i + '" value="' + params[i] + '"/>';
+				GAME.embedOptionsCode += ' ' + i + '="' + params[i] + '"';
+			}
+			console.log(GAME.embedOptionsCode, GAME.paramOptionsCode);
+		} catch (e) {
+			console.warn('Params: ', e);
+		};
+		var request = new URLSearchParams(window.location.search);
+		GAME.reqEmulator = request.get('emulator');
+		if (!GAME.reqEmulator) {
+			GAME.reqEmulator = null;
+		};
+		var langs = {
+			play_now: "PLAY NOW",
+			new_window: "New Window",
+			loading: "Loading...",
+		};
+	</script>
+	<script src="js/flash_detect.js"></script>
+	<script src="js/jquery.min.js"></script>
 
-		<!--Google Analytics-->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+	<!--Google Analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-            gtag('config', 'G-M9KJ1XPKLF');
-        </script>
-        <!--Google Analytics-->
-	</head>
+		gtag('config', 'G-M9KJ1XPKLF');
+	</script>
+	<!--Google Analytics-->
+</head>
 	<body>
 		<div class="embed-code" style="height:100vh">
 			<link rel="stylesheet" href="./waflash/waflash-style.css" />
@@ -135,12 +137,5 @@
 			</div>
 		</div>
 		<script src="js/embed.js"></script>
-		<!--Anchor Ad Start-->
-		<script>
-			var afg={};afg.u=6328;afg.s=31;
-			afg.anchor="bottom";
-			document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
-		</script>
-		<!--Anchor Ad End-->
 	</body>
 </html>

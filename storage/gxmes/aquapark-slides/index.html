@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3044824252307692"
+            crossorigin="anonymous"></script>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Aquapark Slides</title>
@@ -13,23 +15,23 @@
     <script src="Build/UnityLoader.js"></script>
     <script src="/js/main.js"></script>
     <script>
-      window.origBlob = window.Blob;
-      window.Blob = function (array, options) {
-        if (array[1] instanceof Uint8Array) {
-          array[1] = new TextDecoder("utf-8").decode(array[1]).replace(/window\.top\.location\.href|window\.location\.href|document\.referrer|document\.URL/g, '"https://storage.y8.com/"');
-        }
-        return new window.origBlob(array, options);
-      };
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WaterParkSlides3Dx2.json", {
-        onProgress: UnityProgress,
-        Module: {
-          onRuntimeInitialized: function () {
-            UnityProgress(gameInstance, "complete");
-          },
-        },
-      });
+        window.origBlob = window.Blob;
+        window.Blob = function (array, options) {
+            if (array[1] instanceof Uint8Array) {
+                array[1] = new TextDecoder("utf-8").decode(array[1]).replace(/window\.top\.location\.href|window\.location\.href|document\.referrer|document\.URL/g, '"https://storage.y8.com/"');
+            }
+            return new window.origBlob(array, options);
+        };
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WaterParkSlides3Dx2.json", {
+            onProgress: UnityProgress,
+            Module: {
+                onRuntimeInitialized: function () {
+                    UnityProgress(gameInstance, "complete");
+                },
+            },
+        });
     </script>
-  </head>
+</head>
 
   <body>
     <div class="webgl-content">

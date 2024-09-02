@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html itemscope itemtype="https://schema.org/CreativeWork">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <!--  
-		A Dark Room (v1.4)
-		==================
-		
-		A minimalist text adventure by Michael Townsend and all his friends.
-		Inspired by Candy Box (http://candies.aniwey.net/)
-		Contribute on GitHub! (https://github.com/doublespeakgames/adarkroom/)
-	-->
+    <!--
+        A Dark Room (v1.4)
+        ==================
+
+        A minimalist text adventure by Michael Townsend and all his friends.
+        Inspired by Candy Box (http://candies.aniwey.net/)
+        Contribute on GitHub! (https://github.com/doublespeakgames/adarkroom/)
+    -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3044824252307692"
+            crossorigin="anonymous"></script>
     <title>A Dark Room</title>
     <meta itemprop="description" name="description" property="og:description" content="A minimalist text adventure" />
     <meta itemprop="image" property="og:image" content="img/adr.png" />
@@ -18,9 +20,9 @@
     <link rel="image_src" href="img/adr.png" />
     <script src="jquery.min.js"></script>
     <script>
-      if (!window.jQuery) {
-        document.write('<script src="lib/jquery.min.js"><\/script>');
-      }
+        if (!window.jQuery) {
+            document.write('<script src="lib/jquery.min.js"><\/script>');
+        }
     </script>
     <script src="lib/jquery.color-2.1.2.min.js"></script>
     <script src="lib/jquery.event.move.js"></script>
@@ -31,19 +33,19 @@
     <script src="lang/langs.js"></script>
 
     <script>
-      // try to read "lang" param's from url
-      var lang = decodeURIComponent((new RegExp("[?|&]lang=" + "([^&;]+?)(&|#|;|$)").exec(location.search) || [, ""])[1].replace(/\+/g, "%20")) || null;
-      // if no language requested, try to read it from local storage
-      if (!lang) {
-        try {
-          lang = localStorage.lang;
-        } catch (e) {}
-      }
-      // if a language different than english requested, load all translations
-      if (lang && lang != "en") {
-        document.write('<script src="lang/' + lang + '/strings.js"><\/script>');
-        document.write('<link rel="stylesheet" type="text/css" href="lang/' + lang + '/main.css" \/>');
-      }
+        // try to read "lang" param's from url
+        var lang = decodeURIComponent((new RegExp("[?|&]lang=" + "([^&;]+?)(&|#|;|$)").exec(location.search) || [, ""])[1].replace(/\+/g, "%20")) || null;
+        // if no language requested, try to read it from local storage
+        if (!lang) {
+            try {
+                lang = localStorage.lang;
+            } catch (e) { }
+        }
+        // if a language different than english requested, load all translations
+        if (lang && lang != "en") {
+            document.write('<script src="lang/' + lang + '/strings.js"><\/script>');
+            document.write('<link rel="stylesheet" type="text/css" href="lang/' + lang + '/main.css" \/>');
+        }
     </script>
 
     <script src="script/Button.js"></script>
@@ -71,7 +73,7 @@
     <script src="script/events/marketing.js"></script>
 
     <script type="text/javascript">
-      var oldIE = false;
+        var oldIE = false;
     </script>
     <!--[if lt IE 9]>
       <script type="text/javascript">
@@ -89,7 +91,7 @@
 
     <script src="script/localization.js"></script>
     <!-- Google Analytics -->
-  </head>
+</head>
   <body>
     <div id="wrapper">
       <div id="saveNotify">

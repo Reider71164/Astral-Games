@@ -1,5 +1,7 @@
 <html>
-  <head>
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3044824252307692"
+            crossorigin="anonymous"></script>
     <title>Baldi's Basics</title>
     <link rel="icon" type="image/png" href="/favicon.ico" />
     <script type="text/javascript" src="/js/main.js"></script>
@@ -8,16 +10,16 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="baldi.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "baldi.json", {
-        onProgress: UnityProgress,
-        Module: {
-          onRuntimeInitialized: function () {
-            UnityProgress(gameInstance, "complete");
-          },
-        },
-      });
+        var gameInstance = UnityLoader.instantiate("gameContainer", "baldi.json", {
+            onProgress: UnityProgress,
+            Module: {
+                onRuntimeInitialized: function () {
+                    UnityProgress(gameInstance, "complete");
+                },
+            },
+        });
     </script>
-  </head>
+</head>
   <body style="margin: 0;">
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px; padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(35, 31, 32);">
