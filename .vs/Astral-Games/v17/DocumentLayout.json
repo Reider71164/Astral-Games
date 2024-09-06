@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Dale Town\\Astral-Games\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dale Town\\Astral-Games\\policy-password-tool.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:policy-password-tool.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dale Town\\Astral-Games\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,10 +27,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gxmes.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dale Town\\Astral-Games\\policy-password-tool.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:policy-password-tool.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dale Town\\Astral-Games\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "settings.html",
               "DocumentMoniker": "C:\\Users\\Dale Town\\Astral-Games\\settings.html",
               "RelativeDocumentMoniker": "settings.html",
@@ -54,12 +54,11 @@
               "RelativeToolTip": "settings.html",
               "ViewState": "AQIAAFoAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-09-06T05:22:01.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T05:22:01.676Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "search.html",
               "DocumentMoniker": "C:\\Users\\Dale Town\\Astral-Games\\search.html",
               "RelativeDocumentMoniker": "search.html",
@@ -67,12 +66,11 @@
               "RelativeToolTip": "search.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-09-06T05:21:57.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T05:21:57.676Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "emulator.html",
               "DocumentMoniker": "C:\\Users\\Dale Town\\Astral-Games\\emulator.html",
               "RelativeDocumentMoniker": "emulator.html",
@@ -80,12 +78,11 @@
               "RelativeToolTip": "emulator.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-09-06T05:21:53.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T05:21:53.22Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "gxmes.html",
               "DocumentMoniker": "C:\\Users\\Dale Town\\Astral-Games\\gxmes.html",
               "RelativeDocumentMoniker": "gxmes.html",
@@ -93,12 +90,11 @@
               "RelativeToolTip": "gxmes.html",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAACQAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-09-06T05:21:46.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T05:21:46.837Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Dale Town\\Astral-Games\\index.html",
               "RelativeDocumentMoniker": "index.html",
@@ -111,13 +107,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "policy-password-tool.html",
               "DocumentMoniker": "C:\\Users\\Dale Town\\Astral-Games\\policy-password-tool.html",
               "RelativeDocumentMoniker": "policy-password-tool.html",
               "ToolTip": "C:\\Users\\Dale Town\\Astral-Games\\policy-password-tool.html",
               "RelativeToolTip": "policy-password-tool.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC4AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-09-06T05:17:20.32Z",
               "EditorCaption": ""
@@ -132,8 +128,7 @@
               "RelativeToolTip": "style.css",
               "ViewState": "AQIAAJMAAAAAAAAAAAAAAKYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-12T06:49:57.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T06:49:57.428Z"
             }
           ]
         }
