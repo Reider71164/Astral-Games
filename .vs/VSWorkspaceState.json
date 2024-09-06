@@ -1,8 +1,6 @@
 {
   "ExpandedNodes": [
     "",
-    "\\storage",
-    "\\storage\\gxmes",
     "\\storage\\gxmes\\10-minutes-till-dawn",
     "\\storage\\gxmes\\1v1space",
     "\\storage\\gxmes\\2048",
@@ -11,6 +9,6 @@
     "\\storage\\gxmes\\9007199254740992",
     "\\storage\\gxmes\\99balls"
   ],
-  "SelectedNode": "\\storage\\gxmes\\9007199254740992\\index.html",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
