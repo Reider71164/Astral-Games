@@ -1,12 +1,12 @@
-import createServer from '@tomphttp/bare-server-node';
-import http from 'http';
-import nodeStatic from 'node-static';
+const createServer = require('@tomphttp/bare-server-node');
+const http = require('http');
+const nodeStatic = require('node-static');
 const port = process.env.PORT || 8080;
 
 const bare = createServer('/bare/');
 
 // Serve static files from the root directory
-const serve = new nodeStatic.Server('./'); // Serving static files from the root directory
+const serve = new nodeStatic.Server('./');
 
 const server = http.createServer();
 
