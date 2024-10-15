@@ -1,15 +1,39 @@
-const express = require('express');
-const path = require('path');
-const app = express();
+import createServer from '@tomphttp/bare-server-node';
+import http from 'http';
+import nodeStatic from 'node-static';
+const port = process.env.PORT || 8080;
+
+const bare = createServer('/bare/');
 
 // Serve static files from the root directory
-app.use(express.static(__dirname));  // Adjust if your static files are in a different location
+const serve = new nodeStatic.Server('./'); // Serving static files from the root directory
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));  // Root HTML file
+const server = http.createServer();
+
+server.on('request', (req, res) => {
+  if (bare.shouldRoute(req)) {
+    bare.routeRequest(req, res);
+  } else {
+    // Serve static files from root directory
+    serve.serve(req, res, (err, result) => {
+      if (err) {
+        res.statusCode = 500;
+        res.end(`Error serving static file: ${err.message}`);
+      }
+    });
+  }
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+server.on('upgrade', (req, socket, head) => {
+  if (bare.shouldRoute(req, socket, head)) {
+    bare.routeUpgrade(req, socket, head);
+  } else {
+    socket.end();
+  }
 });
+
+server.listen({
+  port: port,
+});
+
+console.log(`Listening on http://localhost:${port}`);
