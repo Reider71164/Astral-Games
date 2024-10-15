@@ -1,13 +1,17 @@
-function launchab() {
-    const tab = window.open('about:blank', '_blank')
-    const iframe = tab.document.createElement('iframe')
-    const stl = iframe.style
-    stl.border = stl.outline = 'none'
-    stl.width = '100vw'
-    stl.height = '100vh'
-    stl.position = 'fixed'
-    stl.left = stl.right = stl.top = stl.bottom = '0'
-    iframe.src = self.location
-    tab.document.body.appendChild(iframe)
-    window.parent.window.location.replace('https://classroom.google.com/h')
-}
+const express = require('express');
+const path = require('path');
+const app = express();
+
+// Serve static files from a 'public' directory
+app.use(express.static('public'));
+
+// Add a route for your main page or proxy logic
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html')); // assuming you have an index.html in a 'public' folder
+});
+
+// Listen on the port provided by Koyeb, or default to 3000 locally
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
